@@ -3,6 +3,7 @@
 - Adding Creation and Editing Capabilities
 - Optimistic Rendering And Undo
 - Adding Search And Filters To The List
+- Customizing the Menu Icons
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
