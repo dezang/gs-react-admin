@@ -1,6 +1,7 @@
 import { Admin, Resource, ListGuesser, EditGuesser } from 'react-admin'
 
 import Dashboard from './Dashboard'
+import authProvider from './authProvider'
 import { UserList } from './users'
 import { PostList, PostEdit, PostCreate } from './posts'
 import jsonServerProvider from 'ra-data-json-server'
@@ -12,7 +13,7 @@ const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com')
 
 function App() {
   return (
-    <Admin dashboard={Dashboard} dataProvider={dataProvider}>
+    <Admin dashboard={Dashboard} authProvider={authProvider} dataProvider={dataProvider}>
       <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} icon={PostIcon}/>
       <Resource name="users" list={UserList} icon={UserIcon}/>
     </Admin>
