@@ -13,7 +13,7 @@ const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com')
 
 function App() {
   return (
-    <Admin dashboard={Dashboard} authProvider={authProvider} dataProvider={dataProvider}>
+    <Admin disableTelemetry dashboard={Dashboard} authProvider={authProvider} dataProvider={dataProvider}>
       <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} icon={PostIcon}/>
       <Resource name="users" list={UserList} icon={UserIcon}/>
     </Admin>
