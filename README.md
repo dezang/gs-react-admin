@@ -5,6 +5,7 @@
 - Adding Search And Filters To The List
 - Customizing the Menu Icons
 - Adding a Login Page
+- Supporting Mobile Devices
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
